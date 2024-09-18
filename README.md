@@ -1,5 +1,18 @@
 # React + TypeScript + Vite
 
+A React app that shows paginated data with persistent row selection, using PrimeReact's DataTable, Vite, React, and TypeScript.
+
+
+I Have Followed These Steps While Building This Project-
+1. Data Fetching:
+  i. To prevent out-of-memory issues, I made sure that no variable holds all rows fetched from different pages.
+  ii. The API is called on every page change to fetch data for the respective page, regardless of how many times the user 
+      revisits a page.
+
+2. Row Selection Persistence:
+  i. Implemented functionality to persist row selection and deselection across different pages.
+  ii. Any row selections or deselections on a page are retained when the user revisits that page later.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
